@@ -1,6 +1,10 @@
-Absolument. Voici votre guide. Considérez-le comme la documentation fondamentale de votre système de trading. 
+
+
+Voici votre guide. Considérez-le comme la documentation fondamentale de votre système de trading. 
 Lisez-le, comprenez chaque ligne, car chaque concept est un bloc essentiel. 
 Un système robuste est construit sur des fondations simples et solides.
+
+[Cette outils à été conçu pour mieux comprendre ses mécanismes ](https://multibrasservices.github.io/Guide-Trading/)
 
 *Simple is better than complex. Complex is better than complicated.*
 
@@ -40,7 +44,8 @@ Le marché bouge. Le pip est l'unité qui mesure ce mouvement.
 
 ## Chapitre 3 : La Quantité - Le Lot
 
-Un mouvement d'un pip ne vaut rien si vous n'échangez qu'un euro. Le **Lot** est la quantité que vous échangez, c'est ce qui donne de la valeur au pip.
+Un mouvement d'un pip ne vaut rien si vous n'échangez qu'un euro. 
+Le **Lot** est la quantité que vous échangez, c'est ce qui donne de la valeur au pip.
 
 *   **Lot :** La taille standard de votre transaction.
     *   **1 Lot Standard** = 100 000 unités de la devise de base.
@@ -59,9 +64,11 @@ C'est en manipulant des lots que le petit mouvement d'un pip se transforme en un
 Un trade sans plan est un pari. Un plan est une série d'instructions claires.
 
 *   **Prix d'Entrée :** Le prix où vous exécutez votre ordre (achat ou vente).
-*   **Stop-Loss (SL) :** Le prix qui **invalide** votre idée. C'est votre sortie automatique en cas de perte. Il est **obligatoire**.
+*   **Stop-Loss (SL) :** Le prix qui **invalide** votre idée. 
+	C'est votre sortie automatique en cas de perte. Il est **obligatoire**.
 *   **Take-Profit (TP) :** Le prix objectif où vous prenez vos gains automatiquement.
-*   **Ratio Risque/Gain (RR) :** Le rapport entre votre gain potentiel et votre risque. Un RR de `2` signifie que votre TP est 2 fois plus loin de votre entrée que votre SL.
+*   **Ratio Risque/Gain (RR) :** Le rapport entre votre gain potentiel et votre risque. 
+	Un RR de `2` signifie que votre TP est 2 fois plus loin de votre entrée que votre SL.
 
 ## Chapitre 5 : Le Calcul Central - La Taille de Position
 
@@ -118,3 +125,46 @@ Pour chaque trade, sans exception :
 ---
 
 *Now is better than never. Although never is often better than *right* now.* Prenez le temps de maîtriser ces concepts. Faites des simulations avec cet outil. Quand la logique sera devenue une seconde nature, vous serez prêt à exécuter votre premier trade.
+
+
+
+
+
+
+# Outils lié à ce guide 
+Oui. L'outil est une traduction directe et fidèle de votre guide. Chaque concept a été implémenté de la manière la plus simple et explicite possible.
+
+### Étape 1 : Capital, Risque
+Vérifier les entrées de base.
+
+### Étape 2 : Pip, Lot
+Vérifier les unités de mesure.
+
+### Étape 3 : Plan de trade
+Vérifier les paramètres de décision.
+
+### Étape 4 : Calcul du lot
+Vérifier la formule centrale.
+
+### Étape 5 : Levier, Marge
+Vérifier les conséquences calculées.
+
+### Étape 6 : Processus implacable
+Vérifier que l'outil suit l'algorithme.
+
+####
+
+Voici la correspondance point par point.
+
+| Concept du Guide | Implémentation dans l'Outil | Vérification |
+| :--- | :--- | :--- |
+| **Chapitre 1 : Capital & Risque** | Champs "Votre Capital (€)" et "Votre Risque (%)". | **Conforme.** Ce sont les entrées fondamentales. |
+| **Chapitre 2 & 3 : Pip & Lot** | Champs "Valeur 1 pip / 1 Lot (€)" et "Position décimale du pip". | **Conforme.** L'outil demande les variables nécessaires pour valoriser le pip. Le calcul de lot utilise la base de 100 000 unités. |
+| **Chapitre 4 : Plan de Trade** | Champs "Prix d'Entrée", "Prix Stop-Loss (SL)" et "Votre Ratio Cible (RR)". | **Conforme.** Le Take-Profit est calculé à partir du ratio, ce qui est une approche systématique. |
+| **Chapitre 5 : Calcul de Position** | La fonction `calculateTrade()` suit exactement les 4 étapes de votre exemple. | **Conforme.** Le code implémente `Taille de Lot = (Capital * Risque%) / (Distance SL en Pips * Valeur du Pip)`. C'est le cœur du système. |
+| **Chapitre 6 : Levier & Marge** | Affiche la "Marge (Caution)" et la "Marge Libre". Alerte si la marge requise dépasse le capital. | **Conforme.** L'outil montre clairement que la marge est une conséquence du calcul et non un paramètre de risque. La sécurité est assurée. |
+| **Chapitre 7 : Processus Implacable** | L'interface entière est conçue pour suivre ce processus dans l'ordre. | **Conforme.** L'outil est l'algorithme. Il vous guide naturellement à travers les étapes de planification avant exécution. |
+
+L'outil respecte la philosophie du guide : chaque décision est explicite, les conséquences sont claires, et le processus est simple et répétable.
+
+Il n'y a pas de magie, juste une logique directe. C'est la seule façon de construire un système robuste.
