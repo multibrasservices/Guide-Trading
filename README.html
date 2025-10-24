@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guide de Trading</title>
+    <style>
+        :root {
+            --background-color: #f8f9fa;
+            --container-bg: #ffffff;
+            --text-color: #212529;
+            --primary-color: #007bff;
+            --border-color: #dee2e6;
+            --code-bg: #e9ecef;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 0; /* Ajusté pour que le menu prenne toute la largeur */
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto; /* Ajout d'une marge */
+            background-color: var(--container-bg);
+            padding: 25px 40px;
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+        }
+        h1, h2, h3 {
+            line-height: 1.2;
+            margin-top: 1.5em;
+            margin-bottom: 0.5em;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 0.3em;
+        }
+        h1 { font-size: 2em; }
+        h2 { font-size: 1.5em; }
+        p { margin-bottom: 1em; }
+        ul, ol { padding-left: 20px; }
+        li { margin-bottom: 0.5em; }
+        code {
+            background-color: var(--code-bg);
+            padding: 0.2em 0.4em;
+            margin: 0;
+            font-size: 85%;
+            border-radius: 3px;
+            font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+        }
+        blockquote {
+            padding: 10px 20px;
+            margin: 0 0 20px;
+            font-size: 1em;
+            border-left: 5px solid var(--border-color);
+            background-color: var(--background-color);
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 1em;
+        }
+        th, td {
+            padding: 8px;
+            border: 1px solid var(--border-color);
+            text-align: left;
+        }
+        th {
+            background-color: var(--background-color);
+            font-weight: bold;
+        }
+        hr {
+            border: 0;
+            border-top: 1px solid var(--border-color);
+            margin: 2em 0;
+        }
+        a {
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <nav style="text-align: center; padding: 10px; background-color: #f4f4f9; border-bottom: 1px solid #ddd;">
+        <a href="index.html" style="margin: 0 15px;">Calculateur</a> |
+        <a href="README.html" style="margin: 0 15px;">Guide</a> |
+        <a href="mindmap.html" style="margin: 0 15px;">Mindmap</a>
+    </nav>
+
+    <div class="container">
+        <p>Voici votre guide. Considérez-le comme la documentation fondamentale de votre système de trading. Lisez-le, comprenez chaque ligne, car chaque concept est un bloc essentiel. Un système robuste est construit sur des fondations simples et solides.</p>
+        <p><a href="https://multibrasservices.github.io/Guide-Trading/">Cet outil a été conçu pour mieux comprendre ses mécanismes</a></p>
+        <p><em>Simple is better than complex. Complex is better than complicated.</em></p>
+        <hr>
+        <h1>La Bible du Trading à Levier : Un Guide pour le Débutant Systématique</h1>
+        <p>Ce guide n'est pas une stratégie de gain. C'est un manuel de <strong>survie et de gestion du risque</strong>. Votre objectif n'est pas de transformer 100€ en 1000€ rapidement, mais de construire un processus qui, s'il est appliqué avec rigueur, peut faire croître un capital.</p>
+        
+        <h2>Chapitre 1 : Le Fondement - Votre Capital</h2>
+        <p>C'est votre point de départ. Tout découle de ce chiffre.</p>
+        <ul>
+            <li><strong>Capital :</strong> L'argent total sur votre compte.
+                <ul><li><em>Exemple :</em> <strong>100 €</strong></li></ul>
+            </li>
+            <li><strong>La Règle d'Or : Le Risque Fixe</strong><br>
+                C'est la décision la plus importante que vous prendrez. C'est le pourcentage de votre capital que vous acceptez de perdre sur <strong>une seule</strong> transaction.
+                <ul>
+                    <li><strong>Définition :</strong> Un contrat que vous passez avec vous-même pour protéger votre capital de la ruine.</li>
+                    <li><strong>Recommandation pour débuter :</strong> Entre 2% et 5%.</li>
+                    <li><em>Exemple :</em> Avec 100€, un risque de 5% signifie que votre <strong>perte maximale par trade</strong> sera de <strong>5 €</strong>. C'est votre <strong>Montant à Risquer</strong>.</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h2>Chapitre 2 : L'Unité de Mesure - Le Pip</h2>
+        <p>Le marché bouge. Le pip est l'unité qui mesure ce mouvement.</p>
+        <ul>
+            <li><strong>Pip (Percentage In Point) :</strong> La plus petite variation de prix standardisée pour une paire de devises. C'est le "centimètre" du Forex.
+                <ul>
+                    <li>Pour la plupart des paires (EUR/USD, GBP/USD), c'est la <strong>4ème décimale</strong>.</li>
+                    <li>Pour les paires en Yen (USD/JPY), c'est la <strong>2ème décimale</strong>.</li>
+                </ul>
+            </li>
+            <li><strong>Exemple Concret (EUR/USD) :</strong>
+                <ul>
+                    <li>Le prix passe de <code>1.0750</code> à <code>1.0751</code>. C'est un mouvement de <strong>+1 pip</strong>.</li>
+                    <li>Le prix passe de <code>1.0750</code> à <code>1.0730</code>. C'est un mouvement de <strong>-20 pips</strong>.</li>
+                </ul>
+            </li>
+        </ul>
+        <blockquote><strong>Note pour les Cryptos (BTC/USDC) :</strong> C'est plus simple. Il n'y a pas de "pip". On parle de "points". Un mouvement de 60 000$ à 60 001$ est un mouvement de 1 point.</blockquote>
+
+        <h2>Chapitre 3 : La Quantité - Le Lot</h2>
+        <p>Un mouvement d'un pip ne vaut rien si vous n'échangez qu'un euro. Le <strong>Lot</strong> est la quantité que vous échangez, c'est ce qui donne de la valeur au pip.</p>
+        <ul>
+            <li><strong>Lot :</strong> La taille standard de votre transaction.
+                <ul>
+                    <li><strong>1 Lot Standard</strong> = 100 000 unités de la devise de base.</li>
+                    <li><strong>1 Mini Lot (0.10)</strong> = 10 000 unités.</li>
+                    <li><strong>1 Micro Lot (0.01)</strong> = 1 000 unités.</li>
+                </ul>
+            </li>
+            <li><strong>Exemple Concret (EUR/USD) :</strong>
+                <ul>
+                    <li>Avec <strong>1 Lot Standard</strong>, un mouvement de 1 pip vaut environ <strong>10 $</strong> (~9.20 €).</li>
+                    <li>Avec <strong>1 Mini Lot (0.10)</strong>, 1 pip vaut environ <strong>1 $</strong> (~0.92 €).</li>
+                    <li>Avec <strong>1 Micro Lot (0.01)</strong>, 1 pip vaut environ <strong>0.10 $</strong> (~0.09 €).</li>
+                </ul>
+            </li>
+        </ul>
+        <p>C'est en manipulant des lots que le petit mouvement d'un pip se transforme en un gain ou une perte réelle.</p>
+
+        <h2>Chapitre 4 : Le Plan de Trade - Vos Instructions</h2>
+        <p>Un trade sans plan est un pari. Un plan est une série d'instructions claires.</p>
+        <ul>
+            <li><strong>Prix d'Entrée :</strong> Le prix où vous exécutez votre ordre (achat ou vente).</li>
+            <li><strong>Stop-Loss (SL) :</strong> Le prix qui <strong>invalide</strong> votre idée. C'est votre sortie automatique en cas de perte. Il est <strong>obligatoire</strong>.</li>
+            <li><strong>Take-Profit (TP) :</strong> Le prix objectif où vous prenez vos gains automatiquement.</li>
+            <li><strong>Ratio Risque/Gain (RR) :</strong> Le rapport entre votre gain potentiel et votre risque. Un RR de <code>2</code> signifie que votre TP est 2 fois plus loin de votre entrée que votre SL.</li>
+        </ul>
+
+        <h2>Chapitre 5 : Le Calcul Central - La Taille de Position</h2>
+        <p>C'est ici que tout se connecte. Vous ne choisissez pas votre taille de lot au hasard. Vous la <strong>calculez</strong> pour qu'elle respecte votre risque.</p>
+        <p><strong>Objectif :</strong> Faire en sorte que la distance de votre SL en pips corresponde exactement à votre risque en euros.</p>
+        <p><strong>Processus de Calcul :</strong></p>
+        <ol>
+            <li><strong>Définir le risque en € :</strong> <code>100€ * 5% = 5€</code>.</li>
+            <li><strong>Mesurer le risque en pips :</strong> <code>|Prix d'Entrée - Prix du SL|</code>.
+                <ul><li><em>Exemple :</em> Achat à <code>1.0750</code>, SL à <code>1.0730</code>. Risque = <strong>20 pips</strong>.</li></ul>
+            </li>
+            <li><strong>Calculer la perte pour 1 Lot :</strong> <code>20 pips * 9.20 €/pip = 184 €</code>.</li>
+            <li><strong>Calculer la Taille de Lot finale :</strong><br>
+                <code>Taille de Lot = Montant à Risquer / Perte pour 1 Lot</code><br>
+                <code>Taille de Lot = 5 € / 184 € = <strong>0.027 Lot</strong></code>
+            </li>
+        </ol>
+        <p>Vous devez entrer <strong>0.027</strong> dans MetaTrader pour que votre risque de 20 pips corresponde à une perte de 5€.</p>
+
+        <h2>Chapitre 6 : L'Outil - L'Effet de Levier</h2>
+        <p>Le levier n'est pas un choix, c'est une <strong>conséquence</strong> de votre calcul de risque.</p>
+        <ul>
+            <li><strong>Marge :</strong> La "caution" que le courtier immobilise sur votre compte pour vous permettre d'ouvrir une position.</li>
+            <li><strong>Levier :</strong> Le multiplicateur qui vous permet de contrôler une position plus grande que votre marge.</li>
+            <li><strong>Liquidation :</strong> La fermeture forcée de votre position par le courtier si vos pertes atteignent le montant de votre marge. <strong>C'est la sécurité qui vous empêche d'avoir une dette.</strong></li>
+        </ul>
+        <p><strong>Exemple Concret :</strong></p>
+        <ul>
+            <li>Vous voulez prendre une position de <strong>0.027 Lot</strong> (valeur de <code>0.027 * 100 000 = 2 700 €</code>).</li>
+            <li>Votre capital est de 100 €.</li>
+            <li>Le levier <em>minimum requis</em> est <code>2 700 € / 100 € = <strong>x27</strong></code>.</li>
+            <li>Si votre courtier vous demande 1% de marge (équivalent à un levier x100), la marge immobilisée sera <code>2 700 € / 100 = 27 €</code>.</li>
+            <li>Si vous oubliez votre SL et que le trade va contre vous, vous serez liquidé et perdrez ces <strong>27 €</strong>.</li>
+            <li>Si vous mettez votre SL, vous ne perdrez que <strong>5 €</strong>.</li>
+        </ul>
+        <table>
+            <thead>
+                <tr>
+                    <th>Concept</th>
+                    <th>Qui le décide ?</th>
+                    <th>À quoi ça sert ?</th>
+                    <th>Montant dans l'exemple</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Risque</strong></td>
+                    <td><strong>Vous</strong> (via le SL)</td>
+                    <td>Protéger votre capital.</td>
+                    <td><strong>5 €</strong></td>
+                </tr>
+                <tr>
+                    <td><strong>Marge</strong></td>
+                    <td><strong>Le Courtier</strong> (via le Levier)</td>
+                    <td>Garantir le prêt.</td>
+                    <td><strong>27 €</strong></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>Chapitre 7 : Le Processus Implacable (Votre Algorithme)</h2>
+        <p>Pour chaque trade, sans exception :</p>
+        <ol>
+            <li><strong>Définir le Risque :</strong> Fixez votre % de risque (ex: 5%). Calculez le montant en € (5€).</li>
+            <li><strong>Analyser et Planifier :</strong> Déterminez votre Prix d'Entrée, votre Prix de SL et votre Prix de TP sur le graphique.</li>
+            <li><strong>Mesurer :</strong> Calculez la distance de votre SL en pips.</li>
+            <li><strong>Calculer :</strong> Utilisez le calculateur (ou la formule) pour obtenir la <strong>Taille de Lot</strong> exacte.</li>
+            <li><strong>Exécuter :</strong> Ouvrez un nouvel ordre sur MT5 avec la Taille de Lot, le SL et le TP calculés.</li>
+            <li><strong>Ne Rien Faire :</strong> Laissez le plan s'exécuter. Le résultat, qu'il soit gagnant ou perdant, est contrôlé.</li>
+            <li><strong>Répéter :</strong> Pour le trade suivant, recalculez votre risque en € sur la base de votre nouveau capital.</li>
+        </ol>
+        <hr>
+        <p><em>Now is better than never. Although never is often better than *right* now.</em> Prenez le temps de maîtriser ces concepts. Faites des simulations avec cet outil. Quand la logique sera devenue une seconde nature, vous serez prêt à exécuter votre premier trade.</p>
+    </div>
+</body>
+</html>
